@@ -28,5 +28,5 @@ jobs:
     - run: npm run build --if-present
     - run: |    
        touch .env
-       echo "${{secret.PROD.ENV}}"
+       echo "${{secret.PROD.ENV.FILE}}"
        
